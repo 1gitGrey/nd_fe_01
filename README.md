@@ -1,12 +1,15 @@
 
-# Title
-###### Sub Header
+# From Self 12/16/16
+######  TL;DR -> "Let Learning Guide Your Perspective and Success"
 
 >> " "
 >>
 
 
-#### Topic A
+#### STUCK? AT AN IMPASSE? ENERGY WANING?
+
+###### lorem ispum
+
 
 ```
 
