@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>{%title%}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="file://{%support%}/dist/libs.css">
+  <link rel="stylesheet" href="file://{%support%}/dist/app.css">
+</head>
+
+<body>
+
+    <notifications class="hidden">There are actionable items!</notifications>
+
+    <gtd-notes class="hidden">
+        <ul>
+            <li rv-each-task="inbox">
+                {task.state} - {task.name}
+            </li>
+        </ul>
+        <ul id="gtdTasks">
+            <li rv-each-task="action">
+                {task.state} - {task.name}
+            </li>
+        </ul>
+        <ul id="gtdTasks">
+            <li rv-each-task="later">
+                {task.state} - {task.name}
+            </li>
+        </ul>
+        <ul id="gtdTasks">
+            <li rv-each-task="done">
+                {task.state} - {task.name}
+            </li>
+        </ul>
+    </gtd-notes>
+
+    <div id="wrapper">
+        <div id="contentdiv">
+            {%content%}
+        </div>
+    </div>
+    <script src="file://{%support%}/dist/app.js"></script>
+</body>
+</html>
